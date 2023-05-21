@@ -12,4 +12,4 @@ while True:
     s.send(str.encode(msg))  # send some data
     data = s.recv(1024)  # receive the response
     print(bytes.decode(data))  # print the result
-s.close()  # close the connection
+s.close()  # close connection
