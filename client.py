@@ -3,10 +3,10 @@ from constCS import *  # -
 
 s = socket(AF_INET, SOCK_STREAM)
 s.connect((HOST, PORT))  # connect to server (block until accepted)
-print('Informe uma equação (soma, sub, mult e div. obs.: separados por espaço) ou digite "fim" para finalizar: ')
+print('Informe uma equação (soma, sub, mult e div. obs.: separando por espaço) ou digite "fim" para finalizar: ')
 while True:
     msg = input()
-    if msg == "fim" or msg == "FIM" or msg == "Fim":
+    if msg == "fim":
         break
     s.send(str.encode(msg))  # send some data
     data = s.recv(1024)  # receive the response
