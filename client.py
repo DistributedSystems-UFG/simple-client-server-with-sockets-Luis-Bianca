@@ -3,8 +3,7 @@ from constCS import *  # -
 
 s = socket(AF_INET, SOCK_STREAM)
 s.connect((HOST, PORT))  # connect to server (block until accepted)
-print('Digite dois numeros e uma operação(add, multiply, subtract ou divide) separados por espaço ou fim para '
-      'encerrar o programa')
+print('Informe uma equação (soma, sub, mult e div) de dois números ou digite "fim" para finalizar: ')
 while True:
     msg = input()
     if msg == "fim" or msg == "FIM" or msg == "Fim":
