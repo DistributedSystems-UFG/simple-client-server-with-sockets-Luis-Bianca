@@ -1,8 +1,8 @@
 from socket import *
 from constCS import *  # -
 
-HOST = '172.31.35.200'
-PORT = 5678
+HOST = '127.0.0.1'
+PORT = 8080
 
 s = socket(AF_INET, SOCK_STREAM)
 s.bind((HOST, PORT))
