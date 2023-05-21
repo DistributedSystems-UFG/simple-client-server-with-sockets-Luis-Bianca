@@ -1,9 +1,6 @@
 from socket import *
 from constCS import *  # -
 
-HOST = '127.0.0.1'
-PORT = 8080
-
 s = socket(AF_INET, SOCK_STREAM)
 s.bind((HOST, PORT))
 s.listen(1)
