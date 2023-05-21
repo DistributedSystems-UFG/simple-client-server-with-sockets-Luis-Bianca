@@ -1,9 +1,6 @@
 from socket import *
 from constCS import *  # -
 
-HOST = '127.0.0.1'
-PORT = 8080
-
 s = socket(AF_INET, SOCK_STREAM)
 s.connect((HOST, PORT))  # connect to server (block until accepted)
 print('Digite dois numeros e uma operação(add, multiply, subtract ou divide) separados por espaço ou fim para '
