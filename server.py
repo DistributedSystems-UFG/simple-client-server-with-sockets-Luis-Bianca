@@ -16,14 +16,14 @@ while True:  # forever
         break
     tipo = msg.split()
     result = 0
-    if tipo[2] == "add":
-        result = float(tipo[0]) + float(tipo[1])
-    elif tipo[2] == "subtract":
-        result = float(tipo[0]) - float(tipo[1])
-    elif tipo[2] == "multiply":
-        result = float(tipo[0]) * float(tipo[1])
-    elif tipo[2] == "divide":
-        result = float(tipo[0]) / float(tipo[1])
+    if tipo[1] == "+":
+        result = float(tipo[0]) + float(tipo[2])
+    elif tipo[1] == "-":
+        result = float(tipo[0]) - float(tipo[2])
+    elif tipo[1] == "*":
+        result = float(tipo[0]) * float(tipo[2])
+    elif tipo[1] == "/":
+        result = float(tipo[0]) / float(tipo[2])
     else:
         result = 'Tipo Invalido'
     print('Enviando Resposta')
