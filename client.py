@@ -3,7 +3,7 @@ from constCS import *  # -
 
 s = socket(AF_INET, SOCK_STREAM)
 s.connect((HOST, PORT))  # connect to server (block until accepted)
-print('Informe uma operação (soma, sub, mult e div. obs.: separando por espaço) ou digite "fim" para finalizar: ')
+print('Informe uma operação com dois numeros (soma, sub, mult e div. obs.: separando por espaço) ou digite "fim" para finalizar: ')
 while True:
     msg = input()
     if msg == "fim":
