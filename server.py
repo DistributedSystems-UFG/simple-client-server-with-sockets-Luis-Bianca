@@ -11,7 +11,7 @@ while True:  # forever
     data = conn.recv(1024)  # receive data from client
     msg = data.decode()
     if not data: break  # stop if client stopped
-    if msg == "fim" or msg == "FIM" or msg == "Fim":
+    if msg == "fim":
         print("Fim da conexao")
         break
     tipo = msg.split()
