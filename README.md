@@ -15,6 +15,8 @@ Incluir um Readme descritivo do sistema implementado.
 
 Este repositório contém a implementação de uma calculadora simples que se comunica por socket. A calculadora é capaz de realizar operações de soma, subtração, multiplicação e divisão.
 
+Alunos: BIANCA PEREIRA DE CARVALHO e LUIS GUILHERME B. CUSTODIO.
+
 ## Funcionamento
 O sistema consiste em dois arquivos principais: `client.py` e `server.py`. Esses arquivos devem ser executados em instâncias diferentes na Amazon Web Services (AWS). Além dos dois arquivos principais, temos o arquivo `constCS.py` onde estão as informações de HOST e PORT que são utilizadas tanto no cliente quanto no servidor.
 
